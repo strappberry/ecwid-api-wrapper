@@ -1,0 +1,27 @@
+{
+    "name": "strappberry/ecwid-api-wrapper",
+    "description": "Ecwid Api Wrapper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Raúl Luna",
+            "email": "raul.luna@strappberry.com"
+        }
+    ],
+    "require": {
+        "myclabs/php-enum": "^1.0",
+        "guzzlehttp/guzzle": "^6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Strappberry\\EcwidApi\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Strappberry\\EcwidApi\\EcwidApiServiceProvider"
+            ]
+        }
+    }
+}
