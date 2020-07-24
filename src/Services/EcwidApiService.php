@@ -118,6 +118,17 @@ class EcwidApiService
         return $products;
     }
 
+    public function getProductById($productId)
+    {
+        $products = $this->getAllResources('products', [
+            'query' => [
+                'productId' => $productId
+            ],
+        ], true);
+
+        return $products;
+    }
+
     public function searchOrders($filters = [])
     {
         $orders = $this->getAllResources('orders', [
@@ -146,7 +157,7 @@ class EcwidApiService
 
     public function updateOrderFulfillmentStatus($orderId, OrderFulfillmentStatus $newFulfillmentStatus)
     {
-        $response = $this->httpClient->put('orders/'. $orderId, [
+        $response = $this->httpClient->put('orders/'.$orderId, [
             'json' => [
                 'fulfillmentStatus' => $newFulfillmentStatus->getValue(),
             ]

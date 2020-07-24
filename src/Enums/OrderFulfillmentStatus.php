@@ -15,7 +15,8 @@ use MyCLabs\Enum\Enum;
  * @method static OrderFulfillmentStatus READY_FOR_PICKUP()
  * @package Strappberry\EciwdApi\Enums
  */
-class OrderFulfillmentStatus extends Enum {
+class OrderFulfillmentStatus extends Enum
+{
     private const AWAITING_PROCESSING = 'AWAITING_PROCESSING';
     private const PROCESSING = 'PROCESSING';
     private const SHIPPED = 'SHIPPED';

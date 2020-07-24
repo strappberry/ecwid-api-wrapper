@@ -13,7 +13,8 @@ use MyCLabs\Enum\Enum;
  * @method static OrderPaymentStatus PARTIALLY_REFUNDED()
  * @package Strappberry\EciwdApi\Enums
  */
-class OrderPaymentStatus extends Enum {
+class OrderPaymentStatus extends Enum
+{
     private const AWAITING_PAYMENT = 'AWAITING_PAYMENT';
     private const PAID = 'PAID';
     private const CANCELLED = 'CANCELLED';

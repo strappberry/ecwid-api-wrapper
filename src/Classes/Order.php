@@ -10,6 +10,7 @@ use Strappberry\EcwidApi\Enums\OrderPaymentStatus;
  * Class Order
  * @method self setEmail(string $email)
  * @method self setOrderComments(string $comments)
+ * @method self setPrivateAdminNotes(string $admin_notes)
  * @method self setSubTotal(float $sub_total)
  * @method self setTotal(float $total)
  * @package Strappberry\EcwidApi\Classes
